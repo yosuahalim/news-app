@@ -54,7 +54,7 @@ const fetchNews = async (
       body: JSON.stringify({
         query,
         variables: {
-          access_key: "78e10dc740283497a44456b66ffcacc5",
+          access_key: process.env.MEDIASTACK_API_KEY,
           categories: category,
           keywords: keywords,
         },
